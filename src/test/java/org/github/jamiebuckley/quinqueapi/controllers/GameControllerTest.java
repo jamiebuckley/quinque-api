@@ -52,7 +52,7 @@ public class GameControllerTest {
     }
 
     @Test
-    public void getGames_shoudlReturn_allGames() throws Exception {
+    public void getGames_shouldReturn_allGames() throws Exception {
         var games = IntStream.range(0, 5).mapToObj(i -> {
             var game = new Game();
             game.setId(UUID.randomUUID());
