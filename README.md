@@ -27,7 +27,10 @@ Then, to build and run locally
 ```
 ./gradlew build
 docker-compose up
+./gradlew flywayMigrate
 ```
+
+The API docs can then be browsed [here](http://localhost:8080/api/swagger-ui/index.html)
 
 ## Show your support
 
