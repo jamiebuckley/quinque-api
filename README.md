@@ -8,6 +8,8 @@
 
 > An API for a 5 letter guessing word game, that legally-speaking could have been inspired by anything at all
 
+> In unrelated news, I'm addicted to Wordle.
+
 ## Author
 
 👤 **Jamie Buckley**

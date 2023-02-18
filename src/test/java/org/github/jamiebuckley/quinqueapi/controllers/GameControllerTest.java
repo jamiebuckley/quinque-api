@@ -2,6 +2,7 @@ package org.github.jamiebuckley.quinqueapi.controllers;
 
 import org.github.jamiebuckley.quinqueapi.models.Game;
 import org.github.jamiebuckley.quinqueapi.repositories.GameRepository;
+import org.github.jamiebuckley.quinqueapi.services.GameService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -38,11 +39,15 @@ public class GameControllerTest {
     @MockBean
     GameRepository repository;
 
+    @MockBean
+    GameService gameService;
+
     @Test
     public void createGame_shouldReturn_newGame() throws Exception {
         var game = new Game();
         game.setId(UUID.randomUUID());
 
+        Mockito.when(gameService.createNewGame()).thenReturn(game);
         Mockito.when(repository.save(Mockito.any(Game.class))).thenReturn(game);
 
         mvc.perform(post("/games")

@@ -21,6 +21,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2")
 	implementation("org.flywaydb:flyway-core:9.15.0")
+	implementation("io.hypersistence:hypersistence-utils-hibernate-60:3.2.0")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 
@@ -38,4 +39,5 @@ flyway {
 	user = "compose-postgres"
 	password = "compose-postgres"
 	baselineOnMigrate = true
+	cleanDisabled = false
 }
