@@ -4,6 +4,7 @@ services:
   app:
     build:
       context: .
+      dockerfile: m1mac.Dockerfile
     container_name: app
     depends_on:
       - db
