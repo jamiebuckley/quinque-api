@@ -24,8 +24,7 @@ OpenAPI docs for the API can be browsed [here](https://quinque.jamiebuckley.dev/
 
 Currently the docker-compose/docker set-up is geared towards a Mac M1.
 
-Knock the `"arm64v8/"` off the beginning of the `FROM arm64v8/eclipse-temurin:17-jdk-focal`
-to run it on a different system.
+Change `dockerfile: m1mac.Dockerfile` to `dockerfile: Dockerfile` (or just remove the line) to build on a non-M1 system
 
 Then, to build and run locally
 ```
