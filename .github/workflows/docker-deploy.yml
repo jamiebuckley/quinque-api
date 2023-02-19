@@ -23,6 +23,8 @@ jobs:
         uses: gradle/gradle-build-action@v2
       - name: Build with gradle wrapper
         run: ./gradlew bootJar
+      - name: Run unit tests
+        run: ./gradlew test
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag registry.jamiebuckley.dev/quinque-api-app:latest
       - name: Log in to Docker registry
