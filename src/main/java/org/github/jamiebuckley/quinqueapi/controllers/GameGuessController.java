@@ -45,7 +45,7 @@ public class GameGuessController {
         if(gameOptional.isEmpty()) return ResponseEntity.notFound().build();
 
         var game = gameOptional.get();
-        if (gameService.canGuess(game)) {
+        if (!gameService.canGuess(game)) {
             throw new NoMoreGuessesAllowedException(gameId.toString());
         }
 

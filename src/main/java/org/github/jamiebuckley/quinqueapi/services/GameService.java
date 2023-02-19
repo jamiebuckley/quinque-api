@@ -30,7 +30,7 @@ public class GameService {
     }
 
     public boolean canGuess(Game game) {
-        if (!game.getSolved()) return false;
+        if (game.getSolved()) return false;
         return game.getGuesses().size() < 5;
     }
 }
