@@ -10,6 +10,8 @@
 
 > In unrelated news, I'm addicted to Wordle.
 
+OpenAPI docs for the API can be browsed [here](https://quinque.jamiebuckley.dev/api/swagger-ui/index.html)
+
 ## Author
 
 👤 **Jamie Buckley**
