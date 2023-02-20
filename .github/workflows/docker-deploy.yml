@@ -41,8 +41,6 @@ jobs:
           tags: |
             registry.jamiebuckley.dev/quinque-api-app:latest
             registry.jamiebuckley.dev/quinque-api-app:${{ github.sha }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
       - name: Set K8s Context
         uses: azure/k8s-set-context@v1
         with:
