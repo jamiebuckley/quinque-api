@@ -5,6 +5,7 @@ plugins {
 	id("org.springframework.boot") version "3.0.2"
 	id("io.spring.dependency-management") version "1.1.0"
 	id ("org.flywaydb.flyway") version "9.8.1"
+	id("com.adarshr.test-logger") version "3.2.0"
 }
 
 group = "org.github.jamiebuckley"
